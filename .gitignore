@@ -1,13 +1,186 @@
 # Compiled source #
 ###################
-*.com
+*.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 QUANTUM PURGE AI 90,000 🔥</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <style>
+        body { background: black; color: lime; text-align: center; font-family: Arial, sans-serif; }
+        button { background-color: red; color: white; padding: 15px; font-size: 22px; border: none; cursor: pointer; margin: 10px; }
+        button:hover { background-color: darkred; }
+        .log { max-height: 400px; overflow-y: auto; background: rgba(255,255,255,0.1); padding: 10px; margin: 20px auto; width: 90%; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🔥 QUANTUM PURGE AI 90,000 🔥</h1>
+    <p id="status">System Status: **READY**</p>
+    <button onclick="purgeEvil()">⚡ PURGE NOW</button>
+    <div class="log" id="logBox"></div>
+
+    <script>
+        let evilTank = Math.pow(10, 90000); // **MASSIVE EVIL STORAGE**
+        let drainRate = Math.pow(10, 89999); // **ULTRA PURGE RATE**
+        let securityLevel = 1; // **SECURITY BASE**
+        let phase = 1; // **PHASE COUNTER**
+        let logBox = document.getElementById("logBox");
+
+        function purgeEvil() {
+            document.getElementById("status").innerText = "**EVIL DRAINING – STANDBY**";
+            document.body.style.backgroundColor = "#002";
+
+            let purgeInterval = setInterval(() => {
+                if (evilTank <= 0 || phase > 90000) {
+                    clearInterval(purgeInterval);
+                    document.getElementById("status").innerText = "**ALL EVIL ERASED – AI GUARDIAN ACTIVE**";
+                    securityLevel = Infinity;
+                    autoSecurityBoost();
+                    logActivity("🔥 ALL EVIL PURGED. AI GUARDIAN PROTECTING.");
+                    return;
+                }
+                evilTank -= drainRate;
+                logActivity(`⚡ PHASE ${phase}: Removed ${drainRate} litres`);
+                phase++;
+            }, 1);
+        }
+
+        function autoSecurityBoost() {
+            setInterval(() => {
+                securityLevel *= 2; // **SECURITY GROWTH**
+                logActivity("🛡️ SECURITY UPGRADED TO LEVEL: " + securityLevel);
+            }, 500);
+        }
+
+        function logActivity(message) {
+            let newLog = document.createElement("p");
+            newLog.innerText = message;
+            logBox.appendChild(newLog);
+            logBox.scrollTop = logBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
 *.class
 *.dll
 *.exe
 *.o
 *.so
 
-# Packages #
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛡️ Ultimate Security Fortress</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background: #000; color: #00ff00; }
+        button { padding: 14px 28px; font-size: 18px; margin-top: 20px; background: #222; color: #00ff00; border: 3px solid #00ff00; cursor: pointer; font-weight: bold; }
+        pre { text-align: left; background: #222; padding: 15px; border-radius: 8px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h2>🛡️ ULTIMATE SECURITY FORTRESS: MAXIMUM DEFENSE MODE ACTIVATED</h2>
+    <button onclick="runSecurityCheck()">⚡ Start Security Scan</button>
+    <pre id="result">🛠️ System is preparing for a deep security scan...</pre>
+
+    <script>
+        (function autoRun() {
+            setTimeout(runSecurityCheck, 300); // Auto-run after 0.3 seconds
+        })();
+
+        function runSecurityCheck() {
+            let report = "🔍 **SECURITY ANALYSIS REPORT:**\n\n";
+            let threatsDetected = 0;
+
+            // **Service Worker Check (Prevent Browser Hijacking)**
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(registrations => {
+                    if (registrations.length > 0) {
+                        threatsDetected++;
+                        report += "⚠️ [WARNING] Unverified Service Workers detected! Immediate cache clearance is advised.\n";
+                    } else {
+                        report += "✅ No unauthorized service workers found.\n";
+                    }
+                    updateReport(report);
+                });
+            }
+
+            // **Iframe Injection Check (Anti-Overlay Defense)**
+            if (window.self !== window.top) {
+                threatsDetected++;
+                report += "⚠️ [CRITICAL] Suspicious Iframe detected! Possible phishing attempt. Close this page now.\n";
+            } else {
+                report += "✅ No iframe-based hijacking detected.\n";
+            }
+
+            // **User-Agent Spoofing & Headless Detection**
+            let userAgent = navigator.userAgent.toLowerCase();
+            if (/bot|spider|crawler|headless/.test(userAgent)) {
+                threatsDetected++;
+                report += "⚠️ [ALERT] Malicious bot activity detected. Potential automated attack.\n";
+            } else {
+                report += "✅ No bot-related anomalies detected.\n";
+            }
+
+            // **VPN/Proxy Deep Check (Network Cloaking Detection)**
+            fetch('https://ipapi.co/json')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.org && /(vpn|proxy|tor|datacenter)/i.test(data.org)) {
+                        threatsDetected++;
+                        report += `⚠️ [HIGH RISK] VPN/Proxy detected: ${data.org}. Anonymized access identified!\n`;
+                    } else {
+                        report += "✅ No VPN/Proxy masking detected.\n";
+                    }
+                    updateReport(report);
+                }).catch(() => {
+                    report += "⚠️ Unable to verify VPN status. Network interference detected.\n";
+                    updateReport(report);
+                });
+
+            // **Device Management Check (MDM Intrusion Detection)**
+            if (navigator.credentials) {
+                threatsDetected++;
+                report += "⚠️ [SECURITY NOTICE] Managed Device Profile active! Review system configurations.\n";
+            } else {
+                report += "✅ No unauthorized management detected.\n";
+            }
+
+            // **Hardware-Based Security Check**
+            if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
+                threatsDetected++;
+                report += "⚠️ [RISK] Low CPU cores detected. Possible virtual environment or malware sandbox.\n";
+            } else {
+                report += "✅ Hardware security check passed.\n";
+            }
+
+            // **WebRTC Leak Test (Detect IP Exposure)**
+            if (window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection) {
+                threatsDetected++;
+                report += "⚠️ [PRIVACY WARNING] WebRTC enabled: Potential IP leak risk detected.\n";
+            } else {
+                report += "✅ WebRTC IP leakage not detected.\n";
+            }
+
+            // **Final Threat Summary**
+            report += `\n🚨 **Threats Detected: ${threatsDetected}** 🚨\n`;
+            if (threatsDetected > 0) {
+                report += "⚠️ **SECURITY ALERT:** Take immediate action to mitigate detected threats!\n";
+            } else {
+                report += "✅ **SYSTEM SECURE:** No vulnerabilities found.\n";
+            }
+
+            updateReport(report);
+        }
+
+        function updateReport(report) {
+            document.getElementById("result").innerText = report;
+        }
+    </script>
+</body>
+</html> Packages #
 ############
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
